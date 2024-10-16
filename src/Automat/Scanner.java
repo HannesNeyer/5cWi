@@ -7,7 +7,7 @@ public class Scanner {
         this.TicketScanned = TicketScanned;
     }
 
-    public void printingTicket() {
+    public void scanningTicket() {
         System.out.println("scanning Ticket...");
         TicketScanned = true;
         if (TicketScanned == true) {

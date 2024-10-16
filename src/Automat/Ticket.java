@@ -1,21 +1,21 @@
 package Automat;
 
-import java.time.LocalDate;
+import java.util.Random;
 
 public class Ticket {
 
-    private int randomID = (int)(Math.random() * 10001);
     private long creationTime;
     private long payedOutTime;
+    private Random randID = new Random();
 
-    public Ticket(int randomID, long creationTime, long payedOutTime) {
-        this.randomID = randomID;
-        this.creationTime = creationTime;
-        this.payedOutTime = payedOutTime;
+    public Ticket(long creationTime, long payedOutTime, Random randID) {
+        this.randID = randID;
+        this.creationTime = System.currentTimeMillis();
+        this.payedOutTime = System.currentTimeMillis();
     }
 
-    public int getid() {
-        return randomID;
+    public Random getid() {
+        return randID;
     }
 
     public long getcreationTime() {
@@ -24,5 +24,11 @@ public class Ticket {
 
     public long getpayedOutTime() {
         return payedOutTime;
+    }
+
+    @Override
+    public String toString() {
+        return "ID:" + randID + " PayedOutTimestamp:" + payedOutTime + " CreateionTimestamp:" + creationTime;
+
     }
 }
