@@ -16,10 +16,7 @@ public class Automat {
     }
 
     public void getTicket() {
-        this.t1.getid();
-        this.t1.getcreationTime();
-        this.t1.getpayedOutTime();
+        Ticket t1 = new Ticket(0, 0, 0);
     }
 
-    
 }

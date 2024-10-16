@@ -1,5 +1,7 @@
 package Automat;
 
+import java.time.LocalDate;
+
 public class Ticket {
 
     private int randomID = (int)(Math.random() * 10001);
