@@ -9,8 +9,7 @@ public class Main {
         Controller c1 = new Controller(t1, p1, s1, a1);
         UI ui1 = new UI(c1);
 
-        ui1.buttonPressedPrint();
-        ui1.buttonPressedScann();
+        ui1.buttons();
     }
 
 }
