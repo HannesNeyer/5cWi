@@ -9,7 +9,6 @@ public class Controller {
     protected Printer p1;
     protected Scanner s1;
     protected Automat a1;
-    private List<Ticket> tickets = new ArrayList<Ticket>();
 
     public Controller(Ticket t1, Printer p1, Scanner s1, Automat a1) {
         this.t1 = t1;
