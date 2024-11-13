@@ -1,7 +1,5 @@
 package Camera;
 
-import java.util.Arrays;
-
 public class Camera {
     public enum Resolution {
         Klein, Mittel, Groß
