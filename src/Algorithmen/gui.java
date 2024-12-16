@@ -16,15 +16,14 @@ public class GUI {
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-
+                    activeSorter = new InsertionSort();
                     break;
                 case 2:
-
+                    activeSorter = new SeletionSort();
                     break;
                 case 3:
-
+                activeSorter = new BubbleSort();
                     break;
-
                 default:
                     break;
             }

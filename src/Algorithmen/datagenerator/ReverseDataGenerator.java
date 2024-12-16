@@ -2,25 +2,25 @@ package algorithmen.datagenerator;
 
 import java.util.Random;
 
-public class BaseDataGenerator {
+public class ReverseDataGenerator {
     
-    private DataGenerator dataGenerator = new DataGenerator();
-    
-    public int[] ReverseDataArray() {
-        int size = dataGenerator.getSize();
-        int[] arr = dataGenerator.getDataArray();
-        int[] reversedArray = new int[size];
+    private static DataGenerator dataGenerator = new DataGenerator();
         
-        for (int i = 0; i < size; i++) {
-            reversedArray[i] = arr[size - 1 - i];
-        }
+        public static int[] ReverseDataArray(int j) {
+            int size = dataGenerator.getSize();
+            int[] arr = dataGenerator.getDataArray();
+            int[] reversedArray = new int[size];
+        
+            for (int i = 0; i < size; i++) {
+                reversedArray[i] = arr[size - 1 - i];
+            }
         return reversedArray;
     }
 
     public int[] ReverseDataArrayMinMax() {
         int size = dataGenerator.getSize();
         int min = dataGenerator.getMin();
-        int max = dataGenerator.getMax();
+        int max = dataGenerator.getMin();
         Random rand = new Random();
         int[] reversedArray = new int[size];
         

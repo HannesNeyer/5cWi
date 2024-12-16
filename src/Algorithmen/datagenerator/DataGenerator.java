@@ -3,14 +3,9 @@ package algorithmen.datagenerator;
 import java.util.Random;
 
 public class DataGenerator {
-    private int size;
-    private int min;
-    private int max;
-    private int[] dataArray;
 
-    public int[] generateDataArray(int size) {
-        this.size = size;
-        dataArray = new int[size];
+    public static int[] generateDataArray(int size, int[] dataArray) {
+
         Random rand = new Random();
 
         for (int i = 0; i < size; i++) {
@@ -20,11 +15,7 @@ public class DataGenerator {
         return dataArray;
     }
 
-    public int[] generateDataArrayMinMax(int size, int min, int max) {
-        this.size = size;
-        this.min = min;
-        this.max = max;
-        dataArray = new int[size];
+    public static int[] generateDataArrayMinMax(int size, int min, int max, int[] dataArray) {
         Random rand = new Random();
 
         for (int i = 0; i < size; i++) {
@@ -34,7 +25,7 @@ public class DataGenerator {
         return dataArray;
     }
 
-    public void printArray() {
+    public void printArray(int[] dataArray) {
         for (int i = 0; i < dataArray.length; i++) {
             System.out.print(dataArray[i] + " ");
         }
@@ -42,34 +33,18 @@ public class DataGenerator {
     }
 
     public int getSize() {
-        return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-    public int getMin() {
-        return min;
-    }
-
-    public void setMin(int min) {
-        this.min = min;
-    }
-
-    public int getMax() {
-        return max;
-    }
-
-    public void setMax(int max) {
-        this.max = max;
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getSize'");
     }
 
     public int[] getDataArray() {
-        return dataArray;
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getDataArray'");
     }
 
-    public void setDataArray(int[] dataArray) {
-        this.dataArray = dataArray;
+    public int getMin() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getMin'");
     }
+
 }
