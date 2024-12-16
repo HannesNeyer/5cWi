@@ -1,4 +1,4 @@
-package Algorithmen;
+package algorithmen.datagenerator;
 
 public class main {
     public static void main(String[] args) {

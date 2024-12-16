@@ -1,4 +1,4 @@
-package Algorithmen;
+package algorithmen.datagenerator;
 
 import java.util.Random;
 

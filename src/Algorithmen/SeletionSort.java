@@ -1,6 +1,6 @@
 package algorithmen;
 
-public class InsertionSort implements Sorter {
+public class SeletionSort implements Sorter {
 
     @Override
     public int[] sort(int[] data) {
