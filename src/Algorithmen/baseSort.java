@@ -1,5 +1,5 @@
 package algorithmen;
 
-public class main {
+public class baseSort {
     
 }
