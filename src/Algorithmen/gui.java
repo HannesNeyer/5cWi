@@ -22,7 +22,7 @@ public class GUI {
                     activeSorter = new SeletionSort();
                     break;
                 case 3:
-                activeSorter = new BubbleSort();
+                    activeSorter = new BubbleSort();
                     break;
                 default:
                     break;

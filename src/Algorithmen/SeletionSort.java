@@ -18,7 +18,7 @@ public class SeletionSort implements Sorter {
             data[i] = data[min_idx];
             data[min_idx] = temp;
         }
-        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+        return data;
     }
 
 }

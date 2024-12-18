@@ -16,7 +16,7 @@ public class InsertionSort implements Sorter {
             }
             data[j + 1] = key;
         }
-        throw new UnsupportedOperationException("Unimplemented method 'sort'");
+        return data;
     }
 
 }
