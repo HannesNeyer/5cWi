@@ -9,7 +9,7 @@ public class Main {
         
         System.out.println(Arrays.toString(result));
 
-        Gui gui = new Gui();
-        gui.run();
+        //Gui gui = new Gui();
+        //gui.run();
     }
 }
