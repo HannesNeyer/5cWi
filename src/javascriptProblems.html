@@ -1,0 +1,22 @@
+//Größe von Webseiten wird stark erhöht
+//Sicherheitsrisiko injection
+//Debugging
+//Interpretation unterschiedliche Browser interpretieren javascript unterschiedlich
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datum anzeigen</title>
+</head>
+<body>
+    <p id="datum"></p>
+    <script>
+        var aktuellesDatum = new Date();
+        document.getElementById("datum").innerHTML = aktuellesDatum.toLocaleDateString();
+
+        if (aktuellesDatum.getDay() === 5) { // Freitag
+            console.log("Es ist Freitag!");
+        }
+    </script>
+</body>
+</html>
