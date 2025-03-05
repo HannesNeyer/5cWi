@@ -1,22 +1,28 @@
 //Größe von Webseiten wird stark erhöht
 //Sicherheitsrisiko injection
 //Debugging
-//Interpretation unterschiedliche Browser interpretieren javascript unterschiedlich
+//Unterschiedliche Browser interpretieren javascript unterschiedlich
+https://gomakethings.com/why-is-javascript-fragile/
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Datum anzeigen</title>
+    <title>Browser Differences Example</title>
 </head>
 <body>
-    <p id="datum"></p>
+    <p id="output"></p>
     <script>
-        var aktuellesDatum = new Date();
-        document.getElementById("datum").innerHTML = aktuellesDatum.toLocaleDateString();
-
-        if (aktuellesDatum.getDay() === 5) { // Freitag
-            console.log("Es ist Freitag!");
+        try {
+            let greeting = "Hallo, Welt!"; // The 'let' keyword is supported in modern browsers
+            document.getElementById("output").innerHTML = greeting;
+        } catch (error) {
+            document.getElementById("output").innerHTML = "Fehler: " + error.message;
         }
     </script>
 </body>
 </html>
+
+//Open the HTML file in Firefox. You should see "Hallo, Welt!" displayed on the webpage.
+//Open the same HTML file in an older version of Internet Explorer (IE 11 or below). 
+//You will likely see an error message, such as "Fehler: 'let' is undefined," 
+//because the let keyword is not supported in these older browsers.
